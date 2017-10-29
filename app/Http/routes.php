@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'WelcomeController@index');
+Route::get('signup','Auth\Authcontroller@getRegister')->name('singup.get');
+Route::post('signup', 'Auth\AuthController@postRegister')->name('signup.post');
